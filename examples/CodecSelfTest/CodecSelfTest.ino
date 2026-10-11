@@ -1,5 +1,7 @@
 // Arduino-ESP32 2.0.17; serial 115200. Software-only codec test, no RF.
 #include "../../src/SyncLinkCodec.h"
+// Compile the shared implementation directly for this standalone Arduino example.
+#include "../../src/SyncLinkCodec.cpp"
 using namespace SyncLink;
 void setup() {
   Serial.begin(115200);
